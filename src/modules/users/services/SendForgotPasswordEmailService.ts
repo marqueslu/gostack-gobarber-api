@@ -4,7 +4,7 @@ import IMailProvider from '@shared/container/providers/MailProvider/models/IMail
 
 import AppError from '@shared/errors/AppError';
 import IUsersRepository from '../repositories/IUsersRepository';
-import IUserTokensRepository from '../repositories/IuserTokensRepository';
+import IUserTokensRepository from '../repositories/IUserTokensRepository';
 
 interface Request {
   email: string;
