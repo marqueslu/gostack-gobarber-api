@@ -29,7 +29,7 @@ class AuthenticateUserService {
 
   public async execute({ email, password }: Request): Promise<Response> {
     const user = await this.usersRepository.findByEmail(email);
-    console.log(user);
+
     if (!user) {
       throw new Error('Incorrect email/password combination.');
     }
