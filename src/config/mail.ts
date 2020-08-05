@@ -1,0 +1,20 @@
+interface IMailConfig {
+  driver: 'ethereal' | 'ses';
+  defaults: {
+    from: {
+      email: string;
+      name: string;
+    };
+  };
+}
+
+export default {
+  driver: process.env.MAIL_DRIVER || 'ethereal',
+
+  defaults: {
+    from: {
+      email: 'lucas@teste.com.br',
+      name: 'Lucas Marques',
+    },
+  },
+} as IMailConfig;

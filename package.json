@@ -37,6 +37,7 @@
   },
   "dependencies": {
     "@types/nodemailer": "^6.4.0",
+    "aws-sdk": "^2.726.0",
     "bcrypt": "^5.0.0",
     "celebrate": "^12.2.0",
     "class-transformer": "^0.3.1",
