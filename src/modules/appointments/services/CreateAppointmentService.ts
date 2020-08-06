@@ -70,7 +70,7 @@ class CreateAppointmentService {
     });
 
     await this.cacheProvider.invalidate(
-      `rovider-appointments:${provider_id}:${format(
+      `provider-appointments:${provider_id}:${format(
         appointmentDate,
         'yyyy-M-d',
       )}`,
